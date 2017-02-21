@@ -1,12 +1,20 @@
 $(document).ready(function() {
-  var age = parseInt(prompt("How old are you?"));
+  $('form#choice').submit(function(event) {
+    event.preventDefault();
+    var animal = $("input:radio[name=animal]:checked").val();
+    if (animal === "platypus") {
+      $('#platypuses').show();
+      $('#bears').hide();
+      $('#norwals').hide();
+    } else if (animal === "bear") {
+      $('#platypuses').hide();
+      $('#bears').show();
+      $('#norwals').hide();
+    } else {
+      $('#platypuses').hide();
+      $('#bears').hide();
+      $('#norwals').show();
+    }
 
-  if (age < 18) {
-    $('#under-age').show();
-  }  else if (age ===18) {
-    alert("Congrats! You are now of age to Vote in the US!")
-    $('#of-age').show();
-  } else {
-    $('#of-age').show();
-  }
+  });
 });

@@ -3,41 +3,57 @@
 <head>
   <meta charset="utf-8">
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-  <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-  </script>
+  <link href ="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
-  <script src ="js/jquery-3.1.1.js"></script>
+  <script src ="js/jquery.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
   <title></title>
 </head>
 <body>
   <div class="container">
-    <h1>Voting Information</h1>
-    <div id="under-age">
-      <h2>You are currently under age to vote in the US!</h2>
-      <p>below are some links regarding the voting requirements and voting process:</p>
-      <ul>
-        <li> <a href="http://resources.lawinfo.com/civil-rights/right-to-vote/what-are-the-requirements-to-be-eligible-to-v.html">Voting rights in the US</a> </li>
-        <li><a href="https://www.usa.gov/election">Voting process in the US</a> </li>
-      </ul>
-    </div>
+    <h1> Learn about animals</h1>
+    <h2> Which animal would you like to learn about?</h2>
 
-    <div id="of-age">
-      <h2>Congratulations! You are of age to vote in the US!</h2>
-      <p>Below are some resources to get you registered, and to find your nearest voting area!</p>
-      <ul>
-        <li> <a href="https://secure.sos.state.or.us/orestar/vr/register.do">Voting registration</a></li>
-        <li> <a href="https://pollingplaces.democrats.org/">Find voting area near you!</a></li>
-      </ul>
+    <div>
+      <form id="choice">
+        <div class="radio">
+        <label>
+          <input type="radio" name="animal" value="platypus">
+          Platypus
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="animal" value="norwal" >
+          Norwal
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="animal" value="bear" >
+          Bear
+         </label>
+         <button type="submit" class="btn">Submit your choice!</button>
+      </form>
+      </div>
+  </div>
+
+    </ul>
+    <div class="well" id="platypuses">
+      <img src="img/platypus.jpg" alt="Platypuses">
+      <p> The platypus (Ornithorhynchus anatinus), sometimes referred to as the duck-billed platypus, is a semiaquatic egg-laying mammal endemic to eastern Australia, including Tasmania. Together with the four species of echidna, it is one of the five extant species of monotremes, the only mammals that lay eggs instead of giving birth. The animal is the sole living representative of its family (Ornithorhynchidae) and genus (Ornithorhynchus), though a number of related species have been found in the fossil record. The first preserved platypus body was thought to have been a fake, made of several animals sewn together,[3] when it was first looked at by scientists in 1799.
+      </p>
     </div>
-    <h2>
+    <div class="well" id="bears">
+      <img src="img/bears.jpg" alt="Bears">
+      <p>Bears are carnivoran mammals of the family Ursidae. Bears are classified as caniforms, or doglike carnivorans. Although only eight species of bears are extant, they are widespread, appearing in a wide variety of habitats throughout the Northern Hemisphere and partially in the Southern Hemisphere. Bears are found on the continents of North America, South America, Europe, and Asia. Common characteristics of modern bears include large bodies with stocky legs, long snouts, small rounded ears, shaggy hair, plantigrade paws with five nonretractile claws, and short tails.
+      </p>
+    </div>
+    <div class="well" id="norwals">
+      <img src="img/norwal.jpg" alt="Norwals">
+      <p> The narwhal, or narwhale (Monodon monoceros), is a medium-sized toothed whale that possesses a large "tusk" from a protruding canine tooth. It lives year-round in the Arctic waters around Greenland, Canada, and Russia. It is one of two living species of whale in the Monodontidae family, along with the beluga whale. The narwhal males are distinguished by a long, straight, helical tusk, which is an elongated upper left canine. The narwhal was one of many species described by Carl Linnaeus in his publication Systema Naturae in 1758.
+      </p>
+    </div>
   </div>
 </body>
 </html>
